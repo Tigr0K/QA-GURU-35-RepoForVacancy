@@ -1,0 +1,1 @@
+# QA-GURU-35-RepoForVacancy
