@@ -18,7 +18,7 @@ public class MainPage {
     private final SelenideElement emptyBasketButton = $(".basket-empty__btn");
     private final ElementsCollection itemNavbar = $$(".navbar-pc__item");
     private final ElementsCollection listOfTitles = $$(".service-menu__list li");
-    private final SelenideElement searchByImageFormAbNew = $("#searchByImageFormAbNew");
+    private final SelenideElement searchByImageContainer = $("#searchByImageFormAbNew");
     private final SelenideElement uploadImageForSearchByImagePopUpContainer = $("#uploadImageForSearchByImagePopUpContainer");
     private final SelenideElement bannerCarousel = $(".main-page__banner");
 
@@ -57,7 +57,7 @@ public class MainPage {
     }
     @Step("Клик на поиск товара по фото")
     public MainPage clickPhotoSearch() {
-        searchByImageFormAbNew.shouldBe(visible).click();
+        searchByImageContainer.shouldBe(visible).click();
         return this;
     }
     @Step("Появление всплывающего меню при клике на поиск по фото")
