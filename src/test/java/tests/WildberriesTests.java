@@ -51,7 +51,7 @@ public class WildberriesTests extends TestBase {
                         "Вопросы и ответы"))
         );
     }
-
+    @Tag("SMOKE")
     @MethodSource
     @ParameterizedTest(name = "Заголовки при нажитии на кнопку \"Адреса")
     void titlsOnClickBattonAddress(String chapter, List<String> expectedLinks) {
