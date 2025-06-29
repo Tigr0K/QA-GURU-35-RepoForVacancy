@@ -78,3 +78,4 @@ public class WildberriesTests extends TestBase {
                 .bannerCarouselExist();
     }
 }
+
