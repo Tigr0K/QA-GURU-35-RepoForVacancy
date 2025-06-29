@@ -43,12 +43,10 @@ public class WildberriesTests extends TestBase {
     static Stream<Arguments> titlsOnClickBattonAddress() {
         return Stream.of(
                 Arguments.of(" Адреса ", List.of(
-                        "Как сделать заказ",
-                        "Способы оплаты",
+                        "Частые вопросы",
                         "Доставка",
-                        "Возврат товара",
-                        "Возврат денежных средств",
-                        "Вопросы и ответы"))
+                        "Как вернуть товар и деньги",
+                        "Для бизнеса"))
         );
     }
     @Tag("SMOKE")
