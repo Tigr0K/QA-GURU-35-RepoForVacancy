@@ -57,7 +57,7 @@ public class MainPage {
     }
     @Step("Клик на поиск товара по фото")
     public MainPage clickPhotoSearch() {
-        searchByImageContainer.shouldBe(visible).click();
+        searchByImageContainer.hover().click();
         return this;
     }
     @Step("Появление всплывающего меню при клике на поиск по фото")
