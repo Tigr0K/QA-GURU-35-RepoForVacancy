@@ -18,7 +18,7 @@ public class MainPage {
     private final SelenideElement emptyBasketButton = $(".basket-empty__btn");
     private final ElementsCollection itemNavbar = $$(".navbar-pc__item");
     private final ElementsCollection listOfTitles = $$(".service-menu__list li");
-    private final SelenideElement searchByImageContainer = $("#searchByImageFormAbNew");
+    private final SelenideElement searchByImageContainer = $("#searchByImageContainer");
     private final SelenideElement uploadImageForSearchByImagePopUpContainer = $("#uploadImageForSearchByImagePopUpContainer");
     private final SelenideElement bannerCarousel = $(".main-page__banner");
 
