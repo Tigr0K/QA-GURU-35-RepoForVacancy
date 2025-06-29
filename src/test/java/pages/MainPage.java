@@ -10,8 +10,8 @@ import static com.codeborne.selenide.Selenide.*;
 
 
 public class MainPage {
-    private final SelenideElement searchInput = $("[data-qa=search-button]");
-    private final ElementsCollection cardElements = $$(".largeCard");
+    private final SelenideElement searchInput = $("#searchInput");
+    private final ElementsCollection cardElements = $$(".product-card__wrapper");
 
     @Step("Открываем главную страницу")
     public MainPage openPage() {

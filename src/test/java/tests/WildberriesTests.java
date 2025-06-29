@@ -14,10 +14,10 @@ import static com.codeborne.selenide.Selenide.$$;
 
 @Tag("AllTests")
 @Owner("Yuferev Evgeny")
-public class LemanaProTests extends TestBase {
+public class WildberriesTests extends TestBase {
 
     MainPage mainPage = new MainPage();
-    @ValueSource(strings = {"Ламинат", "Кирпич", "Скамейка"})
+    @ValueSource(strings = {"Перфоратор", "Светильник", "Видеокарта"})
     @ParameterizedTest(name = "При поиске запроса {0} список не должен быть пустым")
     @Tag("SMOKE")
     void searchTest(String searchText) {
@@ -26,15 +26,4 @@ public class LemanaProTests extends TestBase {
                 .checkCardMore(10);
     }
 
-    @ValueSource(strings = {
-            "Перфоратор",
-            "Светильник",
-            "Видеокарта"
-    })
-    @ParameterizedTest(name = "Поиск на запрос {0} должен выдавать 10 результатов")
-    @Tag("SMOKE")
-    void searchShouldReturn10ResultsTest(String searchQuery){
-        $("#searchInput").setValue(searchQuery).shouldBe(visible).pressEnter();
-        $$(".product-card__wrapper").shouldBe(sizeGreaterThan(10));
-    }
 }
